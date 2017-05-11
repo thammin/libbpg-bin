@@ -1,0 +1,37 @@
+{
+  "name": "libbpg-bin",
+  "version": "0.9.7",
+  "description": "Binary wrapper for libbpg that makes it seamlessly available as a local dependecy",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node lib/install.js",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thammin/libbpg-bin.git"
+  },
+  "keywords": [
+    "libbpg",
+    "binary",
+    "bpg",
+    "image",
+    "optimize"
+  ],
+  "author": "Paul Young <thammin@live.co.uk> (https://github.com/thammin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thammin/libbpg-bin/issues"
+  },
+  "homepage": "https://github.com/thammin/libbpg-bin#readme",
+  "dependencies": {
+    "bin-build": "^2.2.0",
+    "bin-wrapper": "^3.0.2",
+    "got": "^6.7.1",
+    "logalot": "^2.1.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1"
+  }
+}
