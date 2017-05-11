@@ -26,6 +26,15 @@ exec(`${bpgdec} output.bpg -o input.png`, () => {
 });
 ```
 
+## Version
+Trying to sync the version with [libbpg source mirror](https://github.com/mirrorer/libbpg).(Work in Progress)
+
+Example:
+```shell
+npm install --save libbpg-bin@0.9.7
+# this will install libbpg with version 0.9.7
+```
+
 ## License
 
 MIT
