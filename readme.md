@@ -30,7 +30,7 @@ exec(`${bpgdec} -o input.png output.bpg`, () => {
 
 |OS|libbpg version|
 |---|---|
-|MacOS|0.94|
+|MacOS|0.9.4|
 |Linux|need help|
 |Windows|need help|
 
