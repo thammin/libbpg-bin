@@ -1,6 +1,6 @@
 {
   "name": "libbpg-bin",
-  "version": "0.9.7",
+  "version": "1.0.0",
   "description": "Binary wrapper for libbpg that makes it seamlessly available as a local dependecy",
   "main": "index.js",
   "scripts": {
