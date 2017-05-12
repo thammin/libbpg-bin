@@ -4,13 +4,18 @@
   "description": "Binary wrapper for libbpg that makes it seamlessly available as a local dependecy",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node lib/install.js",
+    "postinstall": "npm run binary",
+    "binary": "node lib/install.js",
     "test": "ava"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thammin/libbpg-bin.git"
   },
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "keywords": [
     "libbpg",
     "binary",
@@ -32,6 +37,10 @@
     "minimist": "^1.2.0"
   },
   "devDependencies": {
-    "ava": "^0.19.1"
+    "ava": "^0.19.1",
+    "is-bpg": "^0.1.0",
+    "is-png": "^1.1.0",
+    "read-chunk": "^2.0.0",
+    "tempy": "^0.1.0"
   }
 }

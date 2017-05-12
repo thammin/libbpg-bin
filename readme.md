@@ -2,7 +2,7 @@
 
 > binary wrapper for [libbpg](http://bellard.org/bpg/)
 
-This wrapper gonna use prebuilt binary if possible and fallback to compile from source.
+This wrapper gonna use prebuilt binary if possible and fallback to compile from latest source code from [here](https://github.com/mirrorer/libbpg).
 
 ## Install
 
@@ -17,22 +17,30 @@ $ npm install --save libbpg-bin
 const { exec } = require('child_process');
 const { bpgenc, bpgdec } = require('libbpg-bin');
 
-exec(`${bpgenc} input.png -o output.bpg`, () => {
+exec(`${bpgenc} -o output.bpg input.png`, () => {
   // Yay! BIG input.png had been converted to SMALL output.bpg.
 });
 
-exec(`${bpgdec} output.bpg -o input.png`, () => {
+exec(`${bpgdec} -o input.png output.bpg`, () => {
   // Owh! BIG input.png come back again.
 });
 ```
 
-## Version
-Trying to sync the version with [libbpg source mirror](https://github.com/mirrorer/libbpg).(Work in Progress)
+## Available prebuilt binary version
 
-Example:
-```shell
-npm install --save libbpg-bin@0.9.7
-# this will install libbpg with version 0.9.7
+|OS|libbpg version|
+|---|---|
+|MacOS|0.94|
+|Linux|need help|
+|Windows|need help|
+
+compile and PR is welcome!
+```sh
+# create binary for the latest version
+$ npm run binary -- --compile 
+
+# or create a specific version
+$ npm run binary -- --compile="0.9.4"
 ```
 
 ## License
